@@ -1,0 +1,138 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+}
+
+/* Logo styling */
+.logo {
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+/* Dark mode button styling */
+.toggle-mode {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 6px 10px;
+    font-size: 14px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Search bar container styling */
+.search-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 24px;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+.search-bar:focus {
+    box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+}
+
+/* Suggestions styling */
+.suggestions {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: none;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.suggestions div {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.suggestions div:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button styles */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #555;
+    background-color: #f8f9fa;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e8e8e8;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+}
+
+footer a {
+    margin: 0 10px;
+    font-size: 14px;
+    color: #5f6368;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+body.dark-mode footer a {
+    color: #bbbbbb;
+}
